@@ -484,7 +484,7 @@ class RegisterUserModelView(ModelView):
 class AuthView(BaseView):
     route_base = ""
     login_template = ""
-    invalid_login_message = lazy_gettext("Invalid login. Please try again.")
+    invalid_login_message = lazy_gettext("Invalid Username or Passowrd, Please Try Again.")
     title = lazy_gettext("Sign In")
 
     @expose("/login/", methods=["GET", "POST"])
